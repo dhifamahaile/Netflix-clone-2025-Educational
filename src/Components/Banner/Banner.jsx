@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "../../utils/axios";
 import requests from "../../utils/requests";
-import "./banner.css";
+import "./Banner.css";
 
 const Banner = () => {
   const [movie, setMovie] = useState({});
@@ -13,7 +13,7 @@ const Banner = () => {
         setMovie(
           request.data.results[
             Math.floor(Math.random() * request.data.results.length)
-          ]
+          ],
         );
       } catch (error) {
         console.log("error", error);
